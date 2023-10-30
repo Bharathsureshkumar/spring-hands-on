@@ -1,0 +1,10 @@
+package com.bean.definitionin.heritance;
+
+public class BeanClassParentProperties {
+
+	private String message1;
+	private String message2;
+	private String message3;
+	
+	
+}

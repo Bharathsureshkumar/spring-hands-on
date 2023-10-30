@@ -1,0 +1,24 @@
+package di.injection;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.dependency.injection.ClassWithConstructor;
+
+@SpringBootApplication
+public class StarterClass {
+	
+	 
+	public static void main(String[] args) {
+		SpringBootApplication.run(StarterClass.class);
+		
+		var context= new ClassPathXmlApplicationContext("spring.xml");	
+		
+		ClassWithConstructor cConstructor = context.getBean(ClassWithConstructor.class);	
+		ClassWithConstructor cConstructor1 = context.getBean(ClassWithConstructor.class);	
+			System.out.println(cConstructor);
+			System.out.println(cConstructor1);
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package singleton.scope;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SingletonAccess {
+
+	public static void main(String[] args) {
+		
+		ApplicationCo"ntext context = new ClassPathXmlApplicationContext();
+		
+	}
+	
+}

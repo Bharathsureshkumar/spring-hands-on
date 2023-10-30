@@ -1,0 +1,13 @@
+package com.dependency.injection;
+
+public class ClassWithConstructor {
+
+	String name;
+	int age;
+	float salary;
+	ClassWithConstructor(){
+		
+	}
+	
+	
+}

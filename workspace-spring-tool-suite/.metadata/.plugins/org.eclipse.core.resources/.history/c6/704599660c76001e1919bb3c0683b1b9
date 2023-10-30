@@ -1,0 +1,17 @@
+package prototype.scope;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class PrototypeAccessClass {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("prototypeSpring.xml");
+		
+		PrototypeScopeClass prototype = (PrototypeScopeClass) context.getBean("prototypeBean");
+		System.out.println("After creaing Object 1 : ");
+		prototype.setMessage("This is frm protype object 1");
+	}
+	
+}

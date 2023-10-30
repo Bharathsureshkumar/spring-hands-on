@@ -1,0 +1,20 @@
+package com.spring.springTest.game;
+
+import org.springframework.stereotype.Component;
+
+@Component("singletonEx")
+public class SingletonScopeEx {
+
+	private String message;
+	
+	private DateTime;
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public void getMessage() {
+		System.out.println(this.message); 
+	}
+	
+}

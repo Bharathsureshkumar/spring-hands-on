@@ -1,0 +1,7 @@
+package com.bean.lifecycle;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class BeanByInterfaces implements InitializingBean, DisposabeBean{
+
+}

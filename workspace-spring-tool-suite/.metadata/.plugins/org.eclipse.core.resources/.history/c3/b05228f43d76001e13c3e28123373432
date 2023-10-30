@@ -1,0 +1,18 @@
+package com.bean.lifecycle;
+
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
+public class BeanByAnnotation {
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("After BeanByAnnotation initialization by Spring .. !");
+	}
+	
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Before BeanByAnnotation destroy by Spring .. !");
+	}
+}

@@ -1,0 +1,26 @@
+package singleton.prototype;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class ControllerExample {
+
+	public static void main(String[] args) throws InterruptedException{
+		
+//		ApplicationContext context = new ClassPathXmlApplicationContext("prototypeSpring.xml");
+		
+		ApplicationContext context= new AnnotationConfigApplicationContext(PrototypeScopeConfiguration.class);
+		
+		Singleton first = context.getBean(Singleton.class);
+		
+		String time_1 = first.getTime();
+		System.out.println("Current time : " + time_1);
+		Thread.sleep(2000);
+		
+		String time_2 = context.getBean(Singleton.class).getTime();
+		System.out.println("2'nd object After 2 sec  : " + time_2);
+		
+	}
+}

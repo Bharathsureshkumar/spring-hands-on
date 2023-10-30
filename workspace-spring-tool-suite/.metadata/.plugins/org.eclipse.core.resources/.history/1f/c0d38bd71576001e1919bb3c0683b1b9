@@ -1,0 +1,31 @@
+package prototype.scope;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControllerExample {
+
+	
+	private PrototypeService prototype;
+	
+	
+	public List<String> getMethod() throws InterruptedException{
+		
+		ApplicationContext context= new AnnotationConfigApplicationContext(PrototypeScopeConfiguration.class);
+		
+		PrototypeScopeClass first = context.getBean(PrototypeScopeClass.class);
+		
+//		String time_1 = first.getMessage();
+		
+		Thread.sleep(1000);
+		
+		
+		return Arrays.asList(null);
+		
+	}
+}

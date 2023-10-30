@@ -1,0 +1,23 @@
+package com.spring.springTest.game;
+
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Component;
+
+@Component("singletonEx")
+public class SingletonScopeEx {
+
+	private String message;
+	@Autowired
+	private PrototypeScopeEx time;
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public void getMessage() {
+		System.out.println(this.message);
+		time.getTime();
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.bean.definitionin.Inheritance.Collection;
+
+public class StarterClass {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathApplicationContext();
+		
+	}
+	
+}

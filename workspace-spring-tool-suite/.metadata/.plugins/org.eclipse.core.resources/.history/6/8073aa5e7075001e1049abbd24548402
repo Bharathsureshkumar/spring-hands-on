@@ -1,0 +1,15 @@
+package com.spring.springTest.game.copy;
+
+public class GameRunner {
+
+	MarioGame game;
+	
+	public GameRunner(MarioGame mario) {
+		this.game = mario;
+	}
+	
+	public void run() {
+		System.out.println(game);
+	}
+	
+}

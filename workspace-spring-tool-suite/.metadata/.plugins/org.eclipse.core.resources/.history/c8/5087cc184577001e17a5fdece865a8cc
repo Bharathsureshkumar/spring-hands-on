@@ -1,0 +1,25 @@
+package di.injection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.dependency.injection.ClassWithConstructor;
+
+@SpringBootApplication
+public class StarterClass {
+	@Autowired
+	static
+	ClassWithConstructor cConstructor;	
+	public static void main(String[] args) {
+
+		
+		try {
+			System.out.println(cConstructor);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

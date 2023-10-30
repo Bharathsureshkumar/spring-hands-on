@@ -1,0 +1,11 @@
+package com.spring.springTest.game.copy;
+
+public class GameRunner {
+
+	MarioGame mario;
+	
+	public GameRunner(MarioGame mario) {
+		this.mario = mario;
+	}
+	
+}

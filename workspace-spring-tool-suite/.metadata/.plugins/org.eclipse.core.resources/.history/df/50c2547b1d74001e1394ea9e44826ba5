@@ -1,0 +1,5 @@
+package io.springBootStarter.topic;
+
+public class TopicController {
+
+}

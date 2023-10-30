@@ -1,0 +1,9 @@
+package com.dependency.injection;
+
+public class SampleObject {
+
+	SampleObject(){
+		System.out.println("Sample Object .. !");
+	}
+	
+}

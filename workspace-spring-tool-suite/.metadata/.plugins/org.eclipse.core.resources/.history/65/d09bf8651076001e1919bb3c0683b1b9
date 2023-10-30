@@ -1,0 +1,25 @@
+package prototype.scope;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControllerExample {
+
+	
+	private PrototypeService prototype;
+	
+	
+	public List<String> getMethod() throws InterruptedException{
+		
+		ApplicationContext context= new ApplicationConfigApplicationContext(PrototypeScopeConfiguration.class);
+		
+		String first = 
+		
+		Thread.sleep(1000);
+		
+		
+	}
+}

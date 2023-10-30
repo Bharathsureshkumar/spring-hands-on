@@ -1,0 +1,24 @@
+package singleton.prototype;
+
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
+@Service
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class PrototypeService {
+
+	private String time = LocalDateTime.now().toString();
+	
+	@Autowired
+	private ApplicationContext context;
+	
+	public String getTime() {
+		return "The object time : " + time;
+	}
+		
+}

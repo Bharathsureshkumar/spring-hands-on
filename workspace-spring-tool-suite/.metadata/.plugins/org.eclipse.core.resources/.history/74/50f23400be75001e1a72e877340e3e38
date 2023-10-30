@@ -1,0 +1,17 @@
+package com.spring.springTest.game;
+
+
+@Component("singletonEx")
+public class SingletoScopeEx {
+
+	private String message;
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public String getMessge() {
+		return this.message;
+	}
+	
+}

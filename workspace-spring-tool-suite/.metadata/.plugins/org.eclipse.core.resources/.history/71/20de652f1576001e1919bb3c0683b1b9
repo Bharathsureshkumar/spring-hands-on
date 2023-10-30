@@ -1,0 +1,15 @@
+package prototype.scope;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class SingletonScopeService {
+	@Autowired
+	private PrototypeService prototype;
+	
+	
+	public String getMessage() {
+		System.out.println("Object Message : " + this.prototype.getMessage());
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.bean.lifecycle;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class BeanByInterfaces implements InitializingBean, DisposableBean{
+	
+	@Override 
+	public void afterPropertiesSet throws Exception{
+		
+	}
+
+}

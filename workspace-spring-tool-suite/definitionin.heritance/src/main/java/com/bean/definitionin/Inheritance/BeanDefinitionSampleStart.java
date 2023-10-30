@@ -1,0 +1,28 @@
+package com.bean.definitionin.Inheritance;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanDefinitionSampleStart {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		
+		BeanClassParentProperties parent = (BeanClassParentProperties) context.getBean("beanClassParentProperties");
+		
+		System.out.println("This is from Parent Class : ");
+		
+		System.out.println(parent);
+		
+		
+		BeanclassChildwithSameProperties child = (BeanclassChildwithSameProperties) context.getBean("beanclassChildwithSameProperties");
+		
+		System.out.println("\n\nThis is from Child Class : ");
+		
+		System.out.println(child);
+		
+		
+	}
+	
+}

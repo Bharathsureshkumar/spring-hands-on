@@ -1,0 +1,15 @@
+package com.spring.springTest.game.copy;
+
+public class GameStarter {
+
+	public static void main(String[] args) {
+		
+		Game mario = new ContraGame();
+		
+		GameRunner game = new GameRunner(mario);
+		
+		game.run();
+
+	}
+	
+}

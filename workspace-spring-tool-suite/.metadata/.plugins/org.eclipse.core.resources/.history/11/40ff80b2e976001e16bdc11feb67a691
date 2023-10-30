@@ -1,0 +1,5 @@
+package com.bean.definitionin.heritance;
+
+public class BeanclassChildwithSameProperties {
+
+}

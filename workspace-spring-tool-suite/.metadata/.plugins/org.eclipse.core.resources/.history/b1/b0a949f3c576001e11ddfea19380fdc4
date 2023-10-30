@@ -1,0 +1,17 @@
+package com.bean.postprocessor;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+//@SpringBootApplication
+public class PostprocessorApplication {
+
+	public static void main(String[] args) {
+//		SpringApplication.run(PostprocessorApplication.class, args);
+		System.out.println("JAVA SPRING");
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+	
+	}
+
+}

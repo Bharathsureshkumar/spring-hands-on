@@ -1,0 +1,25 @@
+package singleton.prototype;
+
+public class Singleton {
+
+//	@Autowired
+//	private PrototypeService prototype;
+	
+	
+//	@Autowired
+//	private ApplicationContext context;
+	
+	
+	
+	public String getTime() {
+//		Instead of spring injection we request container's to give stance
+//		return "Current time is : " + context.getBean(PrototypeService.class).getTime() + " .. !";
+		
+		
+		
+	}
+	
+//	Method Injection
+	@Lookup
+	
+}

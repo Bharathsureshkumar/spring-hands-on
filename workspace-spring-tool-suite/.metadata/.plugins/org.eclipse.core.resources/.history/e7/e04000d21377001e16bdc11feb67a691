@@ -1,0 +1,19 @@
+package com.dependency.injection;
+
+public class ClassWithConstructor {
+
+	String name;
+	int age;
+	float salary;
+	SampleObject object;
+	public ClassWithConstructor(String name, int age, float salary, SampleObject object) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		this.object = object;
+	}
+	
+	
+	
+}

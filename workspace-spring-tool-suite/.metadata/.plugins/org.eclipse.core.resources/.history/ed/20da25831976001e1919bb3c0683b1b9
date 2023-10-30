@@ -1,0 +1,17 @@
+package singleton.prototype;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import prototype.scope.PrototypeScopeClass;
+
+@Configuration
+public class PrototypeScopeConfiguration {
+	@Bean
+	public Singleton getSingleton() {
+		return new Singleton();
+	}
+	
+	
+	
+}

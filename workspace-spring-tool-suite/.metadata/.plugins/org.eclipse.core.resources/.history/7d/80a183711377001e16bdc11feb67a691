@@ -1,0 +1,5 @@
+package di.injection;
+
+public class StarterClass {
+
+}

@@ -1,0 +1,16 @@
+package prototype.scope;
+
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PrototypeService {
+
+	private String time = LocalDateTime.now().toString();
+	
+	public String getTime() {
+		return "The object time : " + time;
+	}
+		
+}

@@ -1,0 +1,37 @@
+package com.dependency.injection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+@Component
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class ClassWithConstructor {
+
+	String name;
+	int age;
+	float salary;
+	
+	@Autowired
+	SampleObject object;
+	
+	ClassWithConstructor(){
+		super();
+	}
+	
+	public ClassWithConstructor(String name, int age, float salary, SampleObject object) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		this.object = object;
+	}
+	@Override
+	public String toString() {
+		return "ClassWithConstructor [name=" + name + ", age=" + age + ", salary=" + salary + ", object=" + object
+				+ "]";
+	}
+	
+	
+	
+}

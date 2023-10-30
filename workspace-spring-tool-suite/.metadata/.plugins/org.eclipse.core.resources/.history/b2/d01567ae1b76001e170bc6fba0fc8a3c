@@ -1,0 +1,19 @@
+package singleton.prototype;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+public class Singleton {
+
+	@Autowired
+	private PrototypeService prototype;
+	
+	
+	@Autowired
+	private ApplicationContext context;
+	
+	public String getTime() {
+		return "Current time is : " + prototype.getTime() + " .. !";
+	}
+	
+}

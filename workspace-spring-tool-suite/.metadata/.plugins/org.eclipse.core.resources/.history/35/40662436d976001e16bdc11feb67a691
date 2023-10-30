@@ -1,0 +1,7 @@
+package com.bean.postprocessor;
+
+
+@Configuration
+public class BeanConfigurationclass {
+
+}

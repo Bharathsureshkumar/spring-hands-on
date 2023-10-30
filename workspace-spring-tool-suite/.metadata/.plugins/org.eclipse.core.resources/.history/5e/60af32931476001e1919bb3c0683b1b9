@@ -1,0 +1,12 @@
+package prototype.scope;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class PrototypeScopeConfiguration {
+
+	public SingletonScopeService getSingleton() {
+		return new SingletonScopeService();
+	}
+	
+}

@@ -1,0 +1,7 @@
+package singleton.prototype;
+@Service
+public class Singleton {
+
+	
+	
+}

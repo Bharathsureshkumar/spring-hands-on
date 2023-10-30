@@ -1,0 +1,13 @@
+package com.spring.springTest;
+
+public class GameStarter {
+
+	public static void main(String[] args) {
+		
+		MarioGame mario = new MarioGame();
+		
+		Gamebuilder game = new GameBuilder(mario);
+
+	}
+	
+}

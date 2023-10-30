@@ -1,0 +1,26 @@
+package com.dependency.injection;
+
+import di.injection.InjectionApplication;
+
+public class ClassWithConstructor {
+
+	String name;
+	int age;
+	float salary;
+	SampleObject object;
+	public ClassWithConstructor(String name, int age, float salary, SampleObject object) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		this.object = object;
+	}
+	@Override
+	public String toString() {
+		return "ClassWithConstructor [name=" + name + ", age=" + age + ", salary=" + salary + ", object=" + object
+				+ "]";
+	}
+	
+	
+	
+}

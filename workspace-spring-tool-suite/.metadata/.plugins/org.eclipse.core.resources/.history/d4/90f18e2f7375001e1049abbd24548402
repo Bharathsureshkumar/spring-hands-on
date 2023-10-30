@@ -1,0 +1,21 @@
+package com.spring.springTest.game.copy;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class GameStarter {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext();
+		
+		
+		Game contra = new ContraGame();
+		
+		GameRunner game = new GameRunner(contra);
+		
+		game.run();
+
+	}
+	
+}

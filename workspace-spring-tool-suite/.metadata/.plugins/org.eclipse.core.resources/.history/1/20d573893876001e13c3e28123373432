@@ -1,0 +1,15 @@
+package com.bean.lifecycle;
+
+public class BeanInitDestoyMethod {
+
+	public void init() {
+		System.out.println("Init Method Called after spring initialized the BeanInitDestroy Bean");
+	}
+	
+	
+	public void  destroy() {
+		System.out.println("Destroy Method Called before spring destroyed the BeanInitDestroy Bean");
+	}
+	
+	
+}

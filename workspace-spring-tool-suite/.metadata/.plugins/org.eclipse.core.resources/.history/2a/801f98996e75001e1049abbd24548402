@@ -1,0 +1,11 @@
+package com.spring.springTest;
+
+public class GameStarter {
+
+	public static void main(String[] args) {
+		
+		System.out.println("hey");
+
+	}
+	
+}

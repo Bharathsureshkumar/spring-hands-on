@@ -1,0 +1,25 @@
+package com.bean.lifecycle;
+
+import org.springframework.core.Ordered;
+
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
+public class BeanByAnnotation implements Ordered{
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("After BeanByAnnotation initialization by Spring .. !");
+	}
+	
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Before BeanByAnnotation destroy by Spring .. !");
+	}
+	
+	
+	@Override
+	public int getOrder() {return 2;}
+	
+}

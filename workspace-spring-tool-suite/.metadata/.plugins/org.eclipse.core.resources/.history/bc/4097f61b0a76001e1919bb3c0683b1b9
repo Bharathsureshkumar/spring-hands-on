@@ -1,0 +1,23 @@
+package singleton.scope;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SingletonAccess {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("singletonSpring.xml");
+		
+		var singleton = (SingletonScopeClass) context.getBean("singleton");
+		
+		singleton.setMessage("This is from object 1 .. !");
+		
+		var singleton1 = (SingletonScopeClass) context.getBean("singleton");
+		
+		singleton1.getMessage();
+		
+		
+	}
+	
+}

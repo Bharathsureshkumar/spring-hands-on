@@ -1,0 +1,10 @@
+package com.spring.springTest.game;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ConfigurationClassForSingleton {
+
+	public SingletonScopeEx sing;
+	
+}

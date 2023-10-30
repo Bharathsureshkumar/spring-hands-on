@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="sampleClass" class="com.bean.postprocessor.SampleClass"></bean>
+	<bean id="sampleClass" class="com.bean.postprocessor.SampleClass2"></bean>
+	
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+	
+	<bean class="com.bean.postprocessor.BeanPostProcessorDemo"></bean>
+	
+</beans>

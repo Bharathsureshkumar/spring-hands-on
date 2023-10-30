@@ -1,0 +1,24 @@
+package di.injection;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.dependency.injection.ClassWithConstructor;
+
+@SpringBootApplication
+public class StarterClass {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		@Autowired
+		ClassWithConstructor cConstructor;
+		
+		System.out.println(cConstructor);
+		
+	}
+	
+}

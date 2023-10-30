@@ -1,0 +1,34 @@
+package singleton.prototype;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.bind.annotation.RestController;
+
+import prototype.scope.PrototypeScopeClass;
+
+@RestController
+public class ControllerExample {
+
+	
+	private PrototypeService prototype;
+	
+	
+	public List<String> getMethod() throws InterruptedException{
+		
+		ApplicationContext context= new AnnotationConfigApplicationContext(PrototypeScopeConfiguration.class);
+		
+		Singleton first = context.getBean(Singleton.class);
+		
+		String time_1 = first.getTime();
+		System.out.println("Current time : " + time_1);
+		Thread.sleep(2000);
+		
+		String time_2 = context.getBean(Singleton.class).getTime();
+		System.out.println("After 2 sec  : " + time_2);
+		return Arrays.asList(null);
+		
+	}
+}

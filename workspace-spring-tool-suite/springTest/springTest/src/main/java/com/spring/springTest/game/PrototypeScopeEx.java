@@ -1,0 +1,19 @@
+package com.spring.springTest.game;
+
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("prototypeScopeEx")
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class PrototypeScopeEx {
+	
+	private String timenow =  LocalDateTime.now().toString();
+	
+	void getTime() {
+		System.out.println(timenow);
+	}
+	
+}

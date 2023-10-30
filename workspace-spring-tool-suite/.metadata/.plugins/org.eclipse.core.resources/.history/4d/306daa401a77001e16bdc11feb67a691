@@ -1,0 +1,11 @@
+package di.injection;
+
+public class StarterClass {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("");
+		
+	}
+	
+}

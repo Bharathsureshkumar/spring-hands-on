@@ -1,0 +1,10 @@
+package com.dependency.injection;
+@Component
+public class SampleObject {
+	SampleObject(){
+		
+		System.out.println("Sample Object .. !");
+		
+	}
+	
+}

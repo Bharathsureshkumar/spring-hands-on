@@ -1,0 +1,21 @@
+package com.spring.springTest.game.copy;
+
+public class MarioGame {
+
+	public String toString() {
+		return "Running Mario .. !";
+	}
+	
+	public void up() {
+		
+	}
+	public void down() {
+		
+	}
+	public void left() {
+		
+	}
+	public void right() {
+		
+	}
+}

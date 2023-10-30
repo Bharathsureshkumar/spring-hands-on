@@ -1,0 +1,20 @@
+package com.bean.postprocessor;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.lang.Nullable;
+
+//BeanPostProcessor excecutes brfore init() method in the bean life cycle event in each bean
+public class BeanPostProcessorDemo implements BeanPostProcessor{
+	
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		return bean;
+	}
+	
+	@Override
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+		return bean;
+	}
+	
+}

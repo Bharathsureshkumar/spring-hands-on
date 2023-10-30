@@ -1,0 +1,10 @@
+package com.spring.springTest;
+
+public class Mariogame {
+
+	public void run() {
+		System.out.println("Running Mario .. !");
+	}
+	
+	
+}

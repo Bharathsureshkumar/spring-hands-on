@@ -1,0 +1,11 @@
+package com.bean.postprocessor;
+
+public class SampleClass {
+
+	@postConstuct
+	public void init() {
+		System.out.println("Init method from ");
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.bean.definitionin.Inheritance.object;
+
+public class ChildClass {
+	private String className;
+	
+	public void setclassName(String className) {
+		this.className = className;
+	}
+	
+	public String getclassName() {
+		return className;
+	}
+}

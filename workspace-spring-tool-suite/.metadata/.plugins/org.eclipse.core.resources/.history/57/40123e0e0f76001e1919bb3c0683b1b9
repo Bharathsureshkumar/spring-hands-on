@@ -1,0 +1,10 @@
+package prototype.scope;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControllerExample {
+
+	
+	
+}

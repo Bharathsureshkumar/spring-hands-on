@@ -1,0 +1,13 @@
+package com.bean.postprocessor;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+//BeanPostProcessor excecutes brfore init() method in the bean life cycle event in each bean
+public class BeanPostProcessorDemo implements BeanPostProcessor{
+	
+	@Override
+	public Object postProcessBeforeInitialization() {
+		
+	}
+
+}

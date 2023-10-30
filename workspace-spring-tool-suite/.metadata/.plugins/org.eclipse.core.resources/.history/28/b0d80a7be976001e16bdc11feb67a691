@@ -1,0 +1,10 @@
+package com.bean.definitionin.heritance;
+
+public class BeanClassParentProperties {
+
+	private String name;
+	private String age;
+	private String Definition;
+	
+	
+}

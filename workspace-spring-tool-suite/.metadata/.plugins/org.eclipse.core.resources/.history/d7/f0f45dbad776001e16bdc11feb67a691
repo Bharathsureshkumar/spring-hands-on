@@ -1,0 +1,18 @@
+package com.bean.postprocessor;
+
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
+public class SampleClass {
+
+	@PostConstruct
+	public void init() {
+		System.out.println("Init method from SampleClass");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("destroy method from SampleClass");
+	}
+	
+}

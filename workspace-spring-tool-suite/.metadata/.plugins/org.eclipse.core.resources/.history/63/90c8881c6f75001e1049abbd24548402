@@ -1,0 +1,10 @@
+package com.spring.springTest;
+
+public class Mariogame {
+
+	public String toString() {
+		return "Running Mario .. !";
+	}
+	
+	
+}

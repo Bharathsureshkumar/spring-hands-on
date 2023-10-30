@@ -1,0 +1,23 @@
+package com.spring.springTest.game;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class GameStarter {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		
+		
+		
+		
+		Game contra = context.getBean("mario");
+		
+		GameRunner game = new GameRunner(contra);
+		
+		game.run();
+
+	}
+	
+}

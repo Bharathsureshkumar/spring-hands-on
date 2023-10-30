@@ -1,0 +1,12 @@
+package com.bean.definitionin.Inheritance;
+
+public class BeanDefinitionSampleStart {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+	
+}

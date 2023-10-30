@@ -1,0 +1,12 @@
+package com.bean.lifecycle;
+
+public class BeanByAnnotation {
+
+	public void init() {
+		System.out.println("After BeanByAnnotation initialization by Spring .. !");
+	}
+	
+	public void destroy() {
+		System.out.println("Before BeanByAnnotation destroy by Spring .. !");
+	}
+}

@@ -1,0 +1,5 @@
+package com.dependency.injection;
+
+public class ClassWithConstructor {
+
+}

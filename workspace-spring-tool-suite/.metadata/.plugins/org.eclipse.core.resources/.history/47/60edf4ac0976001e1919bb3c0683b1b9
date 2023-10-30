@@ -1,0 +1,11 @@
+package singleton.scope;
+
+public class SingletonAccess {
+
+	public static void main(String[] args) {
+		
+		ApplicationCOntext context = new ClassPathXmlApplicationContext();
+		
+	}
+	
+}

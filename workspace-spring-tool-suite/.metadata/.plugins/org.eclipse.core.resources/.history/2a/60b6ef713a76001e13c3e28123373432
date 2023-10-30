@@ -1,0 +1,5 @@
+package com.bean.lifecycle;
+
+public class BeanByAnnotation {
+
+}

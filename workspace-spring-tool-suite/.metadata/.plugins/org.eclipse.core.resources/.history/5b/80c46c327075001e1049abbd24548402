@@ -1,0 +1,10 @@
+package com.spring.springTest.game.copy;
+
+public class MarioGame {
+
+	public String toString() {
+		return "Running Mario .. !";
+	}
+	
+	
+}
